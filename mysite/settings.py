@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'matfred.pythonanywhere.com']
 
 
 # Application definition
-
+#тут описан функционал админа в том числе
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
