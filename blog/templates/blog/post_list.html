@@ -11,7 +11,7 @@
 			<div>
 				<h1><a href="">{{ post.title }}</a></h1>
 				<p><em>published: {{ post.published_date }} <br> author: {{ post.author }}</em></p>
-				<p><blockquote>{{ post.text }}</blockquote></p>
+				<p><blockquote>{{ post.text|linebreaksbr }}</blockquote></p> 
 			</div>
 		{% endfor %}
 
