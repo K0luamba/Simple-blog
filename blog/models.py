@@ -7,7 +7,7 @@ class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) #дружественное отношение
     title = models.CharField(max_length=200) #лимит на количество символов
     text = models.TextField() #неораниченный текст
-    created_date = models.DateTimeField(default=timezone.now) #всегда равно времени в момент создания объекта?
+    created_date = models.DateTimeField(default=timezone.now) #по умолчанию равно времени в момент создания объекта
     published_date = models.DateTimeField(blank=True, null=True) #сначала пусто?
     
     def publish(self):
